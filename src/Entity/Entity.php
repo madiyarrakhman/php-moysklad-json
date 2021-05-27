@@ -16,13 +16,13 @@ abstract class Entity implements EntityInterface
      */
     private $id;
 
-    public function getId()
+    public function getId(): string
     {
         return $this->id;
     }
 
     /**
-     * @Type("array")
+     * @Type("App\Entity\MetaEntity")
      * @Accessor(getter="getMeta")
      */
     private $meta;

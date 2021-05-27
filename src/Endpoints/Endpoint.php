@@ -46,6 +46,10 @@ abstract class Endpoint implements EndpointInterface
     }
 
     /**
+     * @param string $method
+     * @param string $endpoint
+     * @param array $options
+     * @return ResponseInterface
      * @throws GuzzleException
      */
     public function request(string $method, string $endpoint, array $options): ResponseInterface
@@ -53,18 +57,34 @@ abstract class Endpoint implements EndpointInterface
         return $this->apiClient->client->request($method, $endpoint, $options);
     }
 
+    /**
+     * @param string $id
+     * @param array|null $query
+     * @return mixed
+     * @throws GuzzleException
+     */
     public function get(string $id, array $query = null)
     {
         $response = $this->request('GET', "{$this->endpoint}/$id", ['query' => $query]);
         return $this->deserialize($response->getBody()->getContents(), $this->entityClass);
     }
 
+    /**
+     * @param array|null $query
+     * @return mixed
+     * @throws GuzzleException
+     */
     public function getList(array $query = null)
     {
         $response = $this->request('GET', $this->endpoint, ['query' => $query]);
         return $this->deserialize($response->getBody()->getContents(), $this->entityListClass);
     }
 
+    /**
+     * @param string $json
+     * @param string $objectClass
+     * @return mixed
+     */
     private function deserialize(string $json, string $objectClass)
     {
         $serializer = SerializerBuilder::create()->build();
