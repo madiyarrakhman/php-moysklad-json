@@ -7,12 +7,6 @@ namespace App\Builder;
 use App\ApiClient;
 use App\Endpoints\Documents\CustomerOrder;
 use App\Endpoints\Endpoint;
-use App\Endpoints\Entities\Assortment;
-use App\Endpoints\Entities\Counterparty;
-use App\Endpoints\Entities\Organization;
-use App\Endpoints\Entities\Product;
-use App\Endpoints\Entities\Service;
-use App\Endpoints\Entities\Store;
 
 /**
  * Class EndpointBuilder
@@ -22,13 +16,13 @@ use App\Endpoints\Entities\Store;
 class EndpointBuilder
 {
     /**
-     * @var \App\ApiClient
+     * @var ApiClient
      */
     public $apiClient;
 
     /**
      * EndpointBuilder constructor.
-     * @param \App\ApiClient $apiClient
+     * @param ApiClient $apiClient
      */
     public function __construct(ApiClient $apiClient)
     {
@@ -36,7 +30,7 @@ class EndpointBuilder
     }
 
     /**
-     * @return \App\Endpoints\Endpoint
+     * @return Endpoint
      */
     public function endpoint(): Endpoint
     {
@@ -44,58 +38,10 @@ class EndpointBuilder
     }
 
     /**
-     * @return \App\Endpoints\Documents\CustomerOrder
+     * @return CustomerOrder
      */
     public function customerOrder(): CustomerOrder
     {
         return new CustomerOrder($this->apiClient);
-    }
-
-    /**
-     * @return \App\Endpoints\Entities\Organization
-     */
-    public function organization(): Organization
-    {
-        return new Organization($this->apiClient);
-    }
-
-    /**
-     * @return \App\Endpoints\Entities\Store
-     */
-    public function store(): Store
-    {
-        return new Store($this->apiClient);
-    }
-
-    /**
-     * @return \App\Endpoints\Entities\Counterparty
-     */
-    public function counterparty(): Counterparty
-    {
-        return new Counterparty($this->apiClient);
-    }
-
-    /**
-     * @return \App\Endpoints\Entities\Assortment
-     */
-    public function assortment(): Assortment
-    {
-        return new Assortment($this->apiClient);
-    }
-
-    /**
-     * @return \App\Endpoints\Entities\Product
-     */
-    public function product(): Product
-    {
-        return new Product($this->apiClient);
-    }
-
-    /**
-     * @return \App\Endpoints\Entities\Service
-     */
-    public function service(): Service
-    {
-        return new Service($this->apiClient);
     }
 }
