@@ -7,6 +7,7 @@ namespace App\Entity;
 use App\Interfaces\EntityInterface;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\Accessor;
+use JMS\Serializer\Annotation\SerializedName;
 
 abstract class Entity implements EntityInterface
 {
@@ -18,7 +19,27 @@ abstract class Entity implements EntityInterface
 
     public function getId(): string
     {
-        return $this->id;
+        if ($this->id) {
+            return $this->id;
+        }
+        unset($this->id);
+        return '';
+    }
+
+    /**
+     * @Type("string")
+     * @SerializedName("accountId")
+     * @Accessor(getter="getAccountId")
+     */
+    private $accountId;
+
+    public function getAccountId(): string
+    {
+        if ($this->accountId) {
+            return $this->accountId;
+        }
+        unset($this->accountId);
+        return '';
     }
 
     /**
@@ -27,7 +48,7 @@ abstract class Entity implements EntityInterface
      */
     private $meta;
 
-    public function getMeta(): array
+    public function getMeta(): MetaEntity
     {
         return $this->meta;
     }

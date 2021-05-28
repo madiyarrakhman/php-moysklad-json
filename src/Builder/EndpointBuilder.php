@@ -6,7 +6,7 @@ namespace App\Builder;
 
 use App\ApiClient;
 use App\Endpoints\Documents\CustomerOrder;
-use App\Endpoints\Endpoint;
+use App\Endpoints\CustomerOrderState;
 
 /**
  * Class EndpointBuilder
@@ -30,18 +30,18 @@ class EndpointBuilder
     }
 
     /**
-     * @return Endpoint
-     */
-    public function endpoint(): Endpoint
-    {
-        return new Endpoint($this->apiClient);
-    }
-
-    /**
      * @return CustomerOrder
      */
     public function customerOrder(): CustomerOrder
     {
         return new CustomerOrder($this->apiClient);
+    }
+
+    /**
+     * @return CustomerOrderState
+     */
+    public function state(): CustomerOrderState
+    {
+        return new CustomerOrderState($this->apiClient);
     }
 }

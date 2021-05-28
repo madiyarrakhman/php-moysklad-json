@@ -73,7 +73,7 @@ class MetaEntity
     /**
      * @return string
      */
-    public function getUuidHref(): string
+    public function getUuidHref()
     {
         return $this->uuidHref;
     }

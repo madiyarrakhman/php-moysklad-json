@@ -13,11 +13,6 @@ class CustomerOrderEntity extends Entity
 {
     /**
      * @Type("string")
-     * @SerializedName("accountId")
-     */
-    public $accountId;
-    /**
-     * @Type("string")
      */
     public $name;
     /**
