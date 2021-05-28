@@ -16,7 +16,7 @@ class MetaDataEntity
      */
     private $meta;
     /**
-     * @Type("array")
+     * @Type("CosmoStar\MoySklad\Entity\AttributeListEntity")
      * @Accessor(getter="getAttributes")
      */
     private $attributes;

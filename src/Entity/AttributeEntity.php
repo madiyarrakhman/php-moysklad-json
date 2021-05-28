@@ -17,10 +17,10 @@ class AttributeEntity extends Entity
     private $name;
     /**
      * @Type("array")
-     * @SerializedName("customerEntityMeta")
-     * @Accessor(getter="getCustomerEntityMeta")
+     * @SerializedName("customEntityMeta")
+     * @Accessor(getter="getСustomEntityMeta")
      */
-    private $customerEntityMeta;
+    private $customEntityMeta;
     /**
      * @Type("string")
      * @Accessor(getter="getType")
@@ -43,9 +43,9 @@ class AttributeEntity extends Entity
     /**
      * @return array
      */
-    public function getCustomerEntityMeta()
+    public function getСustomEntityMeta()
     {
-        return $this->customerEntityMeta;
+        return $this->customEntityMeta;
     }
 
     /**
