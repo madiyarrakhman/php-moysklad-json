@@ -1,12 +1,12 @@
 <?php
 
 
-namespace MadiyarRakhman\MoySklad\Builder\Traits;
+namespace CosmoStar\MoySklad\Builder\Traits;
 
 
-use MadiyarRakhman\MoySklad\Entity\AttributeEntity;
-use MadiyarRakhman\MoySklad\Entity\MetaDataEntity;
-use MadiyarRakhman\MoySklad\Entity\StateEntity;
+use CosmoStar\MoySklad\Entity\AttributeEntity;
+use CosmoStar\MoySklad\Entity\MetaDataEntity;
+use CosmoStar\MoySklad\Entity\StateEntity;
 
 trait GetMetaDataEntity
 {

@@ -1,11 +1,11 @@
 <?php
 
 
-namespace MadiyarRakhman\MoySklad\Interfaces;
+namespace CosmoStar\MoySklad\Interfaces;
 
 /**
  * Interface EndpointInterface
- * @package MadiyarRakhman\MoySklad\Interfaces
+ * @package CosmoStar\MoySklad\Interfaces
  */
 interface EndpointInterface
 {

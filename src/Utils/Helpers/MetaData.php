@@ -1,7 +1,7 @@
 <?php
 
 
-namespace MadiyarRakhman\MoySklad\Utils\Helpers;
+namespace CosmoStar\MoySklad\Utils\Helpers;
 
 
 use Symfony\Component\VarDumper\VarDumper;

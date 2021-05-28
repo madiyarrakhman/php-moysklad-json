@@ -1,7 +1,7 @@
 <?php
 
 
-namespace MadiyarRakhman\MoySklad\Entity;
+namespace CosmoStar\MoySklad\Entity;
 
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\SerializedName;
@@ -26,7 +26,7 @@ class OrganizationEntity extends Entity
      */
     private $externalCode;
     /**
-     * @Type("MadiyarRakhman\MoySklad\Entity\OrganizationAccountListEntity")
+     * @Type("CosmoStar\MoySklad\Entity\OrganizationAccountListEntity")
      * @Accessor(getter="getAccounts")
      */
     private $accounts;

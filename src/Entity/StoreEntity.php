@@ -1,7 +1,7 @@
 <?php
 
 
-namespace MadiyarRakhman\MoySklad\Entity;
+namespace CosmoStar\MoySklad\Entity;
 
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\SerializedName;

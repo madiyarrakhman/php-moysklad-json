@@ -1,13 +1,13 @@
 <?php
 
 
-namespace MadiyarRakhman\MoySklad\Endpoints;
+namespace CosmoStar\MoySklad\Endpoints;
 
 
-use MadiyarRakhman\MoySklad\Builder\Traits\GetEntityMethod;
-use MadiyarRakhman\MoySklad\Builder\Traits\GetListEntityMethod;
-use MadiyarRakhman\MoySklad\Entity\OrganizationEntity;
-use MadiyarRakhman\MoySklad\Entity\OrganizationListEntity;
+use CosmoStar\MoySklad\Builder\Traits\GetEntityMethod;
+use CosmoStar\MoySklad\Builder\Traits\GetListEntityMethod;
+use CosmoStar\MoySklad\Entity\OrganizationEntity;
+use CosmoStar\MoySklad\Entity\OrganizationListEntity;
 
 class Organization extends Endpoint
 {

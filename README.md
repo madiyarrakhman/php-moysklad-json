@@ -6,8 +6,8 @@
 **Пример кода**
 
 `
-$api = new \MadiyarRakhman\MoySklad\ApiClient($uername, $password);
-$builder = new \MadiyarRakhman\MoySklad\Builder\EndpointBuilder($api);
+$api = new \CosmoStar\MoySklad\ApiClient($uername, $password);
+$builder = new \CosmoStar\MoySklad\Builder\EndpointBuilder($api);
 $list = $builder->customerOrder()->getList($query);
 $object = $builder->customerOrder()->get($id, $query);
 `

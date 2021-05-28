@@ -1,7 +1,7 @@
 <?php
 
 
-namespace MadiyarRakhman\MoySklad\Entity;
+namespace CosmoStar\MoySklad\Entity;
 
 
 use JMS\Serializer\Annotation\Type;
@@ -9,7 +9,7 @@ use JMS\Serializer\Annotation\Type;
 class OrganizationAccountListEntity extends EntityList
 {
     /**
-     * @Type("iterable<MadiyarRakhman\MoySklad\Entity\OrganizationAccountEntity>")
+     * @Type("iterable<CosmoStar\MoySklad\Entity\OrganizationAccountEntity>")
      */
     protected $rows;
 }

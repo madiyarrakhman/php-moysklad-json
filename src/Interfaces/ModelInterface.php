@@ -1,7 +1,7 @@
 <?php
 
 
-namespace MadiyarRakhman\MoySklad\Interfaces;
+namespace CosmoStar\MoySklad\Interfaces;
 
 
 interface ModelInterface

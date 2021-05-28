@@ -1,10 +1,10 @@
 <?php
 
 
-namespace MadiyarRakhman\MoySklad\Interfaces;
+namespace CosmoStar\MoySklad\Interfaces;
 
 
-use MadiyarRakhman\MoySklad\Entity\MetaEntity;
+use CosmoStar\MoySklad\Entity\MetaEntity;
 
 interface EntityInterface
 {

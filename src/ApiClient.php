@@ -1,10 +1,10 @@
 <?php
 
 
-namespace MadiyarRakhman\MoySklad;
+namespace CosmoStar\MoySklad;
 
 
-use MadiyarRakhman\MoySklad\Builder\EndpointBuilder;
+use CosmoStar\MoySklad\Builder\EndpointBuilder;
 
 /**
  * Class Client
@@ -53,7 +53,7 @@ class ApiClient
     }
 
     /**
-     * @return \MadiyarRakhman\MoySklad\Builder\EndpointBuilder
+     * @return \CosmoStar\MoySklad\Builder\EndpointBuilder
      */
     public function builder(): EndpointBuilder
     {

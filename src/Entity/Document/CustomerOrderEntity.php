@@ -1,17 +1,17 @@
 <?php
 
 
-namespace MadiyarRakhman\MoySklad\Entity\Document;
+namespace CosmoStar\MoySklad\Entity\Document;
 
 
-use MadiyarRakhman\MoySklad\Entity\Entity;
+use CosmoStar\MoySklad\Entity\Entity;
 use JMS\Serializer\Annotation\Accessor;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\SerializedName;
 
 /**
  * Class CustomerOrderEntity
- * @package MadiyarRakhman\MoySklad\Entity\Document
+ * @package CosmoStar\MoySklad\Entity\Document
  */
 class CustomerOrderEntity extends Entity
 {
@@ -27,17 +27,17 @@ class CustomerOrderEntity extends Entity
      */
     private $externalCode;
     /**
-     * @Type("MadiyarRakhman\MoySklad\Entity\StateEntity")
+     * @Type("CosmoStar\MoySklad\Entity\StateEntity")
      * @Accessor(getter="getState")
      */
     private $state;
     /**
-     * @Type("MadiyarRakhman\MoySklad\Entity\AgentEntity")
+     * @Type("CosmoStar\MoySklad\Entity\AgentEntity")
      * @Accessor(getter="getAgent")
      */
     private $agent;
     /**
-     * @Type("MadiyarRakhman\MoySklad\Entity\OrganizationEntity")
+     * @Type("CosmoStar\MoySklad\Entity\OrganizationEntity")
      * @Accessor(getter="getOrganization")
      */
     private $organization;
@@ -48,7 +48,7 @@ class CustomerOrderEntity extends Entity
      */
     private $organizationAccount;
     /**
-     * @Type("MadiyarRakhman\MoySklad\Entity\StoreEntity")
+     * @Type("CosmoStar\MoySklad\Entity\StoreEntity")
      * @Accessor(getter="getStore")
      */
     private $store;

@@ -1,7 +1,7 @@
 <?php
 
 
-namespace MadiyarRakhman\MoySklad\Builder\Traits;
+namespace CosmoStar\MoySklad\Builder\Traits;
 
 
 use GuzzleHttp\Exception\GuzzleException;

@@ -1,18 +1,18 @@
 <?php
 
 
-namespace MadiyarRakhman\MoySklad\Builder;
+namespace CosmoStar\MoySklad\Builder;
 
 
-use MadiyarRakhman\MoySklad\ApiClient;
-use MadiyarRakhman\MoySklad\Endpoints\Counterparty;
-use MadiyarRakhman\MoySklad\Endpoints\Documents\CustomerOrder;
-use MadiyarRakhman\MoySklad\Endpoints\Organization;
-use MadiyarRakhman\MoySklad\Endpoints\Store;
+use CosmoStar\MoySklad\ApiClient;
+use CosmoStar\MoySklad\Endpoints\Counterparty;
+use CosmoStar\MoySklad\Endpoints\Documents\CustomerOrder;
+use CosmoStar\MoySklad\Endpoints\Organization;
+use CosmoStar\MoySklad\Endpoints\Store;
 
 /**
  * Class EndpointBuilder
- * @package MadiyarRakhman\MoySklad\Entities
+ * @package CosmoStar\MoySklad\Entities
  * @property ApiClient $apiClient
  */
 class EndpointBuilder
