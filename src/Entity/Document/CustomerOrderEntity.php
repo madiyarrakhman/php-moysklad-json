@@ -13,40 +13,121 @@ class CustomerOrderEntity extends Entity
 {
     /**
      * @Type("string")
+     * @Accessor(getter="getName")
      */
-    public $name;
+    private $name;
     /**
      * @Type("string")
      * @SerializedName("externalCode")
+     * @Accessor(getter="getExternalCode")
      */
-    public $externalCode;
+    private $externalCode;
     /**
      * @Type("MadiyarRakhman\MoySklad\Entity\StateEntity")
+     * @Accessor(getter="getState")
      */
-    public $state;
+    private $state;
     /**
      * @Type("MadiyarRakhman\MoySklad\Entity\AgentEntity")
+     * @Accessor(getter="getAgent")
      */
-    public $agent;
+    private $agent;
     /**
      * @Type("MadiyarRakhman\MoySklad\Entity\OrganizationEntity")
+     * @Accessor(getter="getOrganization")
      */
-    public $organization;
+    private $organization;
     /**
      * @Type("array")
      * @SerializedName("organizationAccount")
+     * @Accessor(getter="getOrganizationAccount")
      */
-    public $organizationAccount;
+    private $organizationAccount;
     /**
      * @Type("MadiyarRakhman\MoySklad\Entity\StoreEntity")
+     * @Accessor(getter="getStore")
      */
-    public $store;
+    private $store;
     /**
      * @Type("array")
+     * @Accessor(getter="getAttributes")
      */
-    public $attributes;
+    private $attributes;
     /**
      * @Type("array")
+     * @Accessor(getter="getPositions")
      */
-    public $positions;
+    private $positions;
+
+    /**
+     * @return mixed
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getExternalCode()
+    {
+        return $this->externalCode;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getState()
+    {
+        return $this->state;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAgent()
+    {
+        return $this->agent;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getOrganization()
+    {
+        return $this->organization;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getOrganizationAccount()
+    {
+        return $this->organizationAccount;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getStore()
+    {
+        return $this->store;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getAttributes()
+    {
+        return $this->attributes;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPositions()
+    {
+        return $this->positions;
+    }
 }

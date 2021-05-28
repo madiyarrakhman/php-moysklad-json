@@ -17,13 +17,9 @@ abstract class Entity implements EntityInterface
      */
     private $id;
 
-    public function getId(): string
+    public function getId()
     {
-        if ($this->id) {
-            return $this->id;
-        }
-        unset($this->id);
-        return '';
+        return $this->id;
     }
 
     /**
@@ -33,13 +29,9 @@ abstract class Entity implements EntityInterface
      */
     private $accountId;
 
-    public function getAccountId(): string
+    public function getAccountId()
     {
-        if ($this->accountId) {
-            return $this->accountId;
-        }
-        unset($this->accountId);
-        return '';
+        return $this->accountId;
     }
 
     /**

@@ -5,28 +5,65 @@ namespace MadiyarRakhman\MoySklad\Entity;
 
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\SerializedName;
+use JMS\Serializer\Annotation\Accessor;
 
 class AgentEntity extends Entity
 {
     /**
      * @Type("string")
+     * @Accessor(getter="getName")
      */
-    public $name;
+    private $name;
 
     /**
      * @Type("string")
      * @SerializedName("externalCode")
+     * @Accessor(getter="getExternalCode")
      */
-    public $externalCode;
+    private $externalCode;
 
     /**
      * @Type("string")
      * @SerializedName("companyType")
+     * @Accessor(getter="getCompanyType")
      */
-    public $companyType;
+    private $companyType;
 
     /**
      * @Type("string")
+     * @Accessor(getter="getPhone")
      */
-    public $phone;
+    private $phone;
+
+    /**
+     * @return mixed
+     */
+    public function getName()
+    {
+        return $this->name;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getExternalCode()
+    {
+        return $this->externalCode;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getCompanyType()
+    {
+        return $this->companyType;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPhone()
+    {
+        return $this->phone;
+    }
 }

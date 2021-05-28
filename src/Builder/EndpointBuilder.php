@@ -44,4 +44,19 @@ class EndpointBuilder
     {
         return new CustomerOrderState($this->apiClient);
     }
+
+    public function organization()
+    {
+
+    }
+
+    public function customer()
+    {
+
+    }
+
+    public function store()
+    {
+
+    }
 }

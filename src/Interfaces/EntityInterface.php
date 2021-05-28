@@ -8,7 +8,7 @@ use MadiyarRakhman\MoySklad\Entity\MetaEntity;
 
 interface EntityInterface
 {
-    public function getId(): string;
+    public function getId();
 
-    public function getMeta(): MetaEntity;
+    public function getMeta();
 }

@@ -26,4 +26,21 @@ abstract class EntityList
     {
         return $this->rows;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getContext()
+    {
+        return $this->context;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getMeta()
+    {
+        return $this->meta;
+    }
+
 }
