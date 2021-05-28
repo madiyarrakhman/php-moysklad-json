@@ -42,5 +42,4 @@ abstract class EntityList
     {
         return $this->meta;
     }
-
 }

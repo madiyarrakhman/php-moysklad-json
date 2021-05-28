@@ -7,6 +7,7 @@ namespace MadiyarRakhman\MoySklad\Endpoints\Documents;
 use MadiyarRakhman\MoySklad\Builder\Traits\CreateEntityMethod;
 use MadiyarRakhman\MoySklad\Builder\Traits\GetEntityMethod;
 use MadiyarRakhman\MoySklad\Builder\Traits\GetListEntityMethod;
+use MadiyarRakhman\MoySklad\Builder\Traits\GetMetaDataEntity;
 use MadiyarRakhman\MoySklad\Builder\Traits\UpdateEntityMethod;
 use MadiyarRakhman\MoySklad\Endpoints\Endpoint;
 use MadiyarRakhman\MoySklad\Entity\Document\CustomerOrderEntity;
@@ -22,6 +23,7 @@ class CustomerOrder extends Endpoint
     use GetListEntityMethod;
     use UpdateEntityMethod;
     use CreateEntityMethod;
+    use GetMetaDataEntity;
 
     protected $endpoint = 'entity/customerorder';
 

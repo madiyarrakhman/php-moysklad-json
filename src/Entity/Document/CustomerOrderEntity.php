@@ -9,6 +9,10 @@ use JMS\Serializer\Annotation\Accessor;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\SerializedName;
 
+/**
+ * Class CustomerOrderEntity
+ * @package MadiyarRakhman\MoySklad\Entity\Document
+ */
 class CustomerOrderEntity extends Entity
 {
     /**
