@@ -5,7 +5,6 @@ namespace CosmoStar\MoySklad\Builder\Traits;
 
 
 use GuzzleHttp\Exception\GuzzleException;
-use Symfony\Component\VarDumper\VarDumper;
 
 trait GetEntityMethod
 {

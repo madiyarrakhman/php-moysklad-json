@@ -4,8 +4,6 @@
 namespace CosmoStar\MoySklad\Utils\Helpers;
 
 
-use Symfony\Component\VarDumper\VarDumper;
-
 class MetaData
 {
     public static function getByName(array $metadata, string $name)
