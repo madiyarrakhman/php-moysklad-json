@@ -8,6 +8,7 @@ use CosmoStar\MoySklad\ApiClient;
 use CosmoStar\MoySklad\Endpoints\Counterparty;
 use CosmoStar\MoySklad\Endpoints\Documents\CustomerOrder;
 use CosmoStar\MoySklad\Endpoints\Organization;
+use CosmoStar\MoySklad\Endpoints\Product;
 use CosmoStar\MoySklad\Endpoints\Store;
 
 /**
@@ -61,5 +62,13 @@ class EndpointBuilder
     public function store(): Store
     {
         return new Store($this->apiClient);
+    }
+
+    /**
+     * @return Product
+     */
+    public function product(): Product
+    {
+        return new Product($this->apiClient);
     }
 }
