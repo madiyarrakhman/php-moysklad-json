@@ -8,6 +8,7 @@ use MadiyarRakhman\MoySklad\ApiClient;
 use MadiyarRakhman\MoySklad\Endpoints\Counterparty;
 use MadiyarRakhman\MoySklad\Endpoints\Documents\CustomerOrder;
 use MadiyarRakhman\MoySklad\Endpoints\Organization;
+use MadiyarRakhman\MoySklad\Endpoints\Store;
 
 /**
  * Class EndpointBuilder
@@ -54,8 +55,11 @@ class EndpointBuilder
         return new Counterparty($this->apiClient);
     }
 
-    public function store()
+    /**
+     * @return Store
+     */
+    public function store(): Store
     {
-
+        return new Store($this->apiClient);
     }
 }
