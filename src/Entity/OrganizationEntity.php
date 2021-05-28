@@ -25,9 +25,14 @@ class OrganizationEntity extends Entity
      * @Accessor(getter="getExternalCode")
      */
     private $externalCode;
+    /**
+     * @Type("MadiyarRakhman\MoySklad\Entity\OrganizationAccountListEntity")
+     * @Accessor(getter="getAccounts")
+     */
+    private $accounts;
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getName()
     {
@@ -35,7 +40,7 @@ class OrganizationEntity extends Entity
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getCode()
     {
@@ -43,10 +48,18 @@ class OrganizationEntity extends Entity
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getExternalCode()
     {
         return $this->externalCode;
+    }
+
+    /**
+     * @return array
+     */
+    public function getAccounts()
+    {
+        return $this->accounts;
     }
 }

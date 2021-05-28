@@ -5,6 +5,7 @@ namespace MadiyarRakhman\MoySklad\Builder;
 
 
 use MadiyarRakhman\MoySklad\ApiClient;
+use MadiyarRakhman\MoySklad\Endpoints\Counterparty;
 use MadiyarRakhman\MoySklad\Endpoints\Documents\CustomerOrder;
 use MadiyarRakhman\MoySklad\Endpoints\Organization;
 
@@ -45,9 +46,12 @@ class EndpointBuilder
         return new Organization($this->apiClient);
     }
 
-    public function customer()
+    /**
+     * @return Counterparty
+     */
+    public function counterparty(): Counterparty
     {
-
+        return new Counterparty($this->apiClient);
     }
 
     public function store()
