@@ -1,10 +1,10 @@
 <?php
 
 
-namespace App\Interfaces;
+namespace MadiyarRakhman\MoySklad\Interfaces;
 
 
-use App\Entity\MetaEntity;
+use MadiyarRakhman\MoySklad\Entity\MetaEntity;
 
 interface EntityInterface
 {

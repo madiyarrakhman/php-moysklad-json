@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Entity;
+namespace MadiyarRakhman\MoySklad\Entity;
 
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\SerializedName;

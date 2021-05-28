@@ -1,16 +1,16 @@
 <?php
 
 
-namespace App\Builder;
+namespace MadiyarRakhman\MoySklad\Builder;
 
 
-use App\ApiClient;
-use App\Endpoints\Documents\CustomerOrder;
-use App\Endpoints\CustomerOrderState;
+use MadiyarRakhman\MoySklad\ApiClient;
+use MadiyarRakhman\MoySklad\Endpoints\Documents\CustomerOrder;
+use MadiyarRakhman\MoySklad\Endpoints\CustomerOrderState;
 
 /**
  * Class EndpointBuilder
- * @package App\Entities
+ * @package MadiyarRakhman\MoySklad\Entities
  * @property ApiClient $apiClient
  */
 class EndpointBuilder

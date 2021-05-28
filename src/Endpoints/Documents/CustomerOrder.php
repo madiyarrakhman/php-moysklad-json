@@ -1,20 +1,20 @@
 <?php
 
 
-namespace App\Endpoints\Documents;
+namespace MadiyarRakhman\MoySklad\Endpoints\Documents;
 
 
-use App\Builder\Traits\CreateEntityMethod;
-use App\Builder\Traits\GetEntityMethod;
-use App\Builder\Traits\GetListEntityMethod;
-use App\Builder\Traits\UpdateEntityMethod;
-use App\Endpoints\Endpoint;
-use App\Entity\Document\CustomerOrderEntity;
-use App\Entity\Document\CustomerOrderListEntity;
+use MadiyarRakhman\MoySklad\Builder\Traits\CreateEntityMethod;
+use MadiyarRakhman\MoySklad\Builder\Traits\GetEntityMethod;
+use MadiyarRakhman\MoySklad\Builder\Traits\GetListEntityMethod;
+use MadiyarRakhman\MoySklad\Builder\Traits\UpdateEntityMethod;
+use MadiyarRakhman\MoySklad\Endpoints\Endpoint;
+use MadiyarRakhman\MoySklad\Entity\Document\CustomerOrderEntity;
+use MadiyarRakhman\MoySklad\Entity\Document\CustomerOrderListEntity;
 
 /**
  * Class CustomerOrder
- * @package App\Endpoints\Documents
+ * @package MadiyarRakhman\MoySklad\Endpoints\Documents
  */
 class CustomerOrder extends Endpoint
 {

@@ -1,11 +1,11 @@
 <?php
 
 
-namespace App\Endpoints;
+namespace MadiyarRakhman\MoySklad\Endpoints;
 
 
-use App\Builder\Traits\GetEntityMethod;
-use App\Entity\StateEntity;
+use MadiyarRakhman\MoySklad\Builder\Traits\GetEntityMethod;
+use MadiyarRakhman\MoySklad\Entity\StateEntity;
 
 class CustomerOrderState extends Endpoint
 {

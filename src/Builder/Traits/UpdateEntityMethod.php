@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Builder\Traits;
+namespace MadiyarRakhman\MoySklad\Builder\Traits;
 
 
 trait UpdateEntityMethod

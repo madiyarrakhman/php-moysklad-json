@@ -1,11 +1,11 @@
 <?php
 
 
-namespace App\Interfaces;
+namespace MadiyarRakhman\MoySklad\Interfaces;
 
 /**
  * Interface EndpointInterface
- * @package App\Interfaces
+ * @package MadiyarRakhman\MoySklad\Interfaces
  */
 interface EndpointInterface
 {

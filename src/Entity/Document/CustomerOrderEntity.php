@@ -1,10 +1,10 @@
 <?php
 
 
-namespace App\Entity\Document;
+namespace MadiyarRakhman\MoySklad\Entity\Document;
 
 
-use App\Entity\Entity;
+use MadiyarRakhman\MoySklad\Entity\Entity;
 use JMS\Serializer\Annotation\Accessor;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\SerializedName;
@@ -21,15 +21,15 @@ class CustomerOrderEntity extends Entity
      */
     public $externalCode;
     /**
-     * @Type("App\Entity\StateEntity")
+     * @Type("MadiyarRakhman\MoySklad\Entity\StateEntity")
      */
     public $state;
     /**
-     * @Type("App\Entity\AgentEntity")
+     * @Type("MadiyarRakhman\MoySklad\Entity\AgentEntity")
      */
     public $agent;
     /**
-     * @Type("App\Entity\OrganizationEntity")
+     * @Type("MadiyarRakhman\MoySklad\Entity\OrganizationEntity")
      */
     public $organization;
     /**
@@ -38,7 +38,7 @@ class CustomerOrderEntity extends Entity
      */
     public $organizationAccount;
     /**
-     * @Type("App\Entity\StoreEntity")
+     * @Type("MadiyarRakhman\MoySklad\Entity\StoreEntity")
      */
     public $store;
     /**

@@ -1,16 +1,16 @@
 <?php
 
 
-namespace App\Entity\Document;
+namespace MadiyarRakhman\MoySklad\Entity\Document;
 
 
-use App\Entity\EntityList;
+use MadiyarRakhman\MoySklad\Entity\EntityList;
 use JMS\Serializer\Annotation\Type;
 
 class CustomerOrderListEntity extends EntityList
 {
     /**
-     * @Type("iterable<App\Entity\Document\CustomerOrderEntity>")
+     * @Type("iterable<MadiyarRakhman\MoySklad\Entity\Document\CustomerOrderEntity>")
      */
     protected $rows;
 }

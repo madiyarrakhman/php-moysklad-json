@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Interfaces;
+namespace MadiyarRakhman\MoySklad\Interfaces;
 
 
 interface ModelInterface

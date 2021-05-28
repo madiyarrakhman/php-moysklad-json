@@ -1,18 +1,18 @@
 <?php
 
 
-namespace App\Endpoints;
+namespace MadiyarRakhman\MoySklad\Endpoints;
 
 
-use App\ApiClient;
-use App\Interfaces\EndpointInterface;
+use MadiyarRakhman\MoySklad\ApiClient;
+use MadiyarRakhman\MoySklad\Interfaces\EndpointInterface;
 use GuzzleHttp\Exception\GuzzleException;
 use JMS\Serializer\SerializerBuilder;
 use Psr\Http\Message\ResponseInterface;
 
 /**
  * Class Endpoint
- * @package App\Endpoints
+ * @package MadiyarRakhman\MoySklad\Endpoints
  */
 abstract class Endpoint implements EndpointInterface
 {

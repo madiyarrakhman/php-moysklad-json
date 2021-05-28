@@ -1,10 +1,10 @@
 <?php
 
 
-namespace App\Entity;
+namespace MadiyarRakhman\MoySklad\Entity;
 
 
-use App\Interfaces\EntityInterface;
+use MadiyarRakhman\MoySklad\Interfaces\EntityInterface;
 use JMS\Serializer\Annotation\Type;
 use JMS\Serializer\Annotation\Accessor;
 use JMS\Serializer\Annotation\SerializedName;
@@ -43,7 +43,7 @@ abstract class Entity implements EntityInterface
     }
 
     /**
-     * @Type("App\Entity\MetaEntity")
+     * @Type("MadiyarRakhman\MoySklad\Entity\MetaEntity")
      * @Accessor(getter="getMeta")
      */
     private $meta;
