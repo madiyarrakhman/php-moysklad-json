@@ -9,6 +9,7 @@ use CosmoStar\MoySklad\Endpoints\Counterparty;
 use CosmoStar\MoySklad\Endpoints\Documents\CustomerOrder;
 use CosmoStar\MoySklad\Endpoints\Organization;
 use CosmoStar\MoySklad\Endpoints\Product;
+use CosmoStar\MoySklad\Endpoints\Reports\StockByStore;
 use CosmoStar\MoySklad\Endpoints\Store;
 
 /**
@@ -70,5 +71,13 @@ class EndpointBuilder
     public function product(): Product
     {
         return new Product($this->apiClient);
+    }
+
+    /**
+     * @return StockByStore
+     */
+    public function stockByStore(): StockByStore
+    {
+        return new StockByStore($this->apiClient);
     }
 }
