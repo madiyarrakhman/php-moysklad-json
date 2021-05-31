@@ -41,7 +41,7 @@ class MetaEntity
     /**
      * @return string
      */
-    public function getHref(): string
+    public function getHref()
     {
         return $this->href;
     }
@@ -49,7 +49,7 @@ class MetaEntity
     /**
      * @return string
      */
-    public function getMetadataHref(): string
+    public function getMetadataHref()
     {
         return $this->metadataHref;
     }
@@ -57,7 +57,7 @@ class MetaEntity
     /**
      * @return string
      */
-    public function getType(): string
+    public function getType()
     {
         return $this->type;
     }
@@ -65,7 +65,7 @@ class MetaEntity
     /**
      * @return string
      */
-    public function getMediaType(): string
+    public function getMediaType()
     {
         return $this->mediaType;
     }

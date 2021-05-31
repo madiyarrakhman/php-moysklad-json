@@ -27,7 +27,7 @@ class StoreEntity extends Entity
     private $externalCode;
     /**
      * @Type("string")
-     * @Accessor(getter="geAddress")
+     * @Accessor(getter="getAddress")
      */
     private $address;
     /**
