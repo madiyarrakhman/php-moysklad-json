@@ -7,6 +7,7 @@ namespace CosmoStar\MoySklad\Builder;
 use CosmoStar\MoySklad\ApiClient;
 use CosmoStar\MoySklad\Endpoints\Counterparty;
 use CosmoStar\MoySklad\Endpoints\Documents\CustomerOrder;
+use CosmoStar\MoySklad\Endpoints\Documents\InternalOrder;
 use CosmoStar\MoySklad\Endpoints\Organization;
 use CosmoStar\MoySklad\Endpoints\Product;
 use CosmoStar\MoySklad\Endpoints\Reports\StockByStore;
@@ -39,6 +40,14 @@ class EndpointBuilder
     public function customerOrder(): CustomerOrder
     {
         return new CustomerOrder($this->apiClient);
+    }
+
+    /**
+     * @return InternalOrder
+     */
+    public function internalOrder(): InternalOrder
+    {
+        return new InternalOrder($this->apiClient);
     }
 
     /**
